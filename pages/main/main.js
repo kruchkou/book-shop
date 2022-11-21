@@ -1,8 +1,8 @@
-import { BookElementBuilder } from "./js/BookBuilder.js";
-import { Cart } from "./js/Cart.js";
-import { Book } from "./js/Book.js";
-import { CartElementBuilder } from "./js/CartBuilder.js";
-import { CartGroupElement } from "./js/CartGroupElement.js";
+import { BookElementBuilder } from "../../js/BookBuilder.js";
+import { Cart } from "../../js/Cart.js";
+import { Book } from "../../js/Book.js";
+import { CartElementBuilder } from "../../js/CartBuilder.js";
+import { CartGroupElement } from "../../js/CartGroupElement.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     let main = document.querySelector("#mainDiv");
