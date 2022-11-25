@@ -1,0 +1,113 @@
+#content {
+    display: flex;
+}
+
+#checkout-block {
+    display: flex;
+    justify-content: center;
+}
+
+#checkout-card {
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.input-block {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0.5rem 0;
+}
+
+.input-block-radio {
+    height: 36px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.input-checkbox-block {
+    margin: auto;
+}
+
+.label-radio {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.label-checkbox {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    color: #E6E1E5;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    align-self: center;
+    text-align: center;
+    color: #E6E1E5;
+    width: 80%;
+    height: 40px;
+    outline: none;
+    background: none;
+    border: 2px solid #D0BCFF;
+    border-radius: 4px;
+}
+
+input[type="text"]:invalid,
+input[type="date"]:invalid,
+input[type="number"]:invalid {
+    border: 2px solid #E46962;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../assets/images/icons/radio-unchecked.svg");
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #CAC4D0;
+    border-radius: 2px;
+}
+
+input[type="checkbox"]:checked {
+    background: center/cover url("../../assets/images/icons/checkbox.svg"), #D0BCFF;
+    border: 2px solid #D0BCFF;
+}
+
+input[type="radio"]:checked {
+    background-size: auto;
+    background-image: url("../../assets/images/icons/radio-checked.svg");
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.btn-submit {
+    margin: 0 auto 0.5rem auto;
+    width: 20rem;
+}

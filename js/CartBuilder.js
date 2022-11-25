@@ -35,13 +35,13 @@ export class CartElementBuilder {
 
     build = () => {
         let bookCard = document.createElement("div");
-        bookCard.className = "book-card";
+        bookCard.className = "card cart-card";
 
         let bookTextBlock = document.createElement("div");
         bookTextBlock.className = "book-text-block"
 
         let bookImage = document.createElement("img");
-        bookImage.className = "book-image";
+        bookImage.className = "cart-image";
         bookImage.setAttribute("src", this.imageLink)
 
         let bookTitle = document.createElement("p");
@@ -52,12 +52,8 @@ export class CartElementBuilder {
         bookAuthor.className = "book-author";
         bookAuthor.textContent = this.author;
 
-        let bookDescription = document.createElement("p");
-        bookDescription.className = "book-description";
-        bookDescription.textContent = this.description;
-
         let bookAddBlock = document.createElement("div");
-        bookAddBlock.className = "btn-text-block book-remove-block";
+        bookAddBlock.className = "btn-text-block btn-primary";
 
         let bookPrice = document.createElement("p");
         bookPrice.className = "book-price";
@@ -72,9 +68,8 @@ export class CartElementBuilder {
         bookAddBlock.appendChild(bookPrice);
         bookAddBlock.appendChild(bookAddButton);
 
-        bookTextBlock.appendChild(bookTitle);
         bookTextBlock.appendChild(bookAuthor);
-        bookTextBlock.appendChild(bookDescription);
+        bookTextBlock.appendChild(bookTitle);
         bookTextBlock.appendChild(bookAddBlock);
 
         bookCard.appendChild(bookImage);

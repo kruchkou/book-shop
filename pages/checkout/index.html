@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book shop</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="../../assets/styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../assets/images/icon.png">
+</head>
+
+<body id="mainDiv">
+    <header id="header" class="card-secondary">
+        <a id="header-logo" href="../main" class="title">Book Shop</a>
+    </header>
+    <div id="checkout-block">
+        <div id="checkout-card" class="card-secondary">
+            <h1 class="title">Checkout</h1>
+            <form>
+                <div class="input-block">
+                    <label>Name: </label>
+                    <input id="name-input" type="text" placeholder="Name" required min="3" pattern="[a-zA-Z]{4,}">
+                </div>
+                <div class="input-block">
+                    <label>Surname: </label>
+                    <input id="surname-input" type="text" placeholder="Surname" required pattern="[a-zA-Z]{5,}">
+                </div>
+                <div class="input-block">
+                    <label>Delivery date: </label>
+                    <input id="delivery-date-input" type="date" required>
+                </div>
+                <div class="input-block">
+                    <label>Street: </label>
+                    <input id="street-input" type="text" placeholder="Street" required pattern="[\w\s]{5,}">
+                </div>
+                <div class="input-block">
+                    <label>House number: </label>
+                    <input id="house-input" type="number" placeholder="House number" required min=1>
+                </div>
+                <div class="input-block">
+                    <label>Flat number: </label>
+                    <input id="flat-input" type="text" placeholder="Flat number" required pattern="([123456789]+-)?[123456789]+">
+                </div>
+                <div class="input-block">
+                    <label>Payment type: </label>
+                    <div class="input-block-radio">
+                        <label class="label-radio"><input type="radio" required name="payment-type" checked
+                                value="cash"> Cash</label>
+                        <label class="label-radio"><input type="radio" required name="payment-type" value="card">
+                            Card</label>
+                    </div>
+                </div>
+                <div class="input-block">
+                    <label>Pick 2 gifts (optional): </label>
+                    <div class="input-checkbox-block">
+                        <label class="label-checkbox"><input type="checkbox" value="card"> Provide 2% discount
+                            to the next time</label>
+                        <label class="label-checkbox"><input type="checkbox" value="card"> Branded pen or
+                            pencil</label>
+                        <label class="label-checkbox"><input type="checkbox" value="cash"> Pack as a
+                            gift</label>
+                        <label class="label-checkbox"><input type="checkbox" value="card"> Add postcard</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Confirm order" class="btn btn-primary btn-submit disabled"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script type="module" src="main.js"></script>
+
+</html>
