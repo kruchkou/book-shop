@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
-    let checkboxes = Array.from(document.querySelectorAll("input[type=checkbox"));
+    let checkboxes = Array.from(document.querySelectorAll("input[type=checkbox]"));
     checkboxes.forEach(input => {
         input.addEventListener("change", () => {
             if (checkboxes.filter(item => item.checked).length > 2) {
